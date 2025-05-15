@@ -54,3 +54,17 @@ p {
     max-width: 30%; 
     background-color: rgba(0, 0, 0, 0.4); 
 }
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;       
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth; 
+  }
+  
+  .scroll-container img {
+    height: 200px;           
+    border-radius: 10px;
+    flex-shrink: 0;           
+  }
