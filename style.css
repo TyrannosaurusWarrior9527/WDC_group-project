@@ -9,6 +9,11 @@ body {
     background-attachment: fixed;
 
     align-items: center;
+    
+}
+
+.main-container {
+    text-align: center;
 }
 
 h1 {
@@ -19,6 +24,3 @@ h1 {
     text-align: center;
 }
 
-button {
-    text-align: center;
-}
