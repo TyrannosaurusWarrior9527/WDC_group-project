@@ -9,8 +9,8 @@ body {
     background-attachment: fixed;
 
     display: flex;
-    justify-content: top;
-    align-items: center;
+    justify-content: center;
+    align-items: top;
     
 }
 
