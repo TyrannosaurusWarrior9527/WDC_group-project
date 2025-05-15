@@ -51,4 +51,5 @@ p {
     margin-bottom: 50px;
     margin-top: 50px;
     max-width: 70%; 
+    background-color: rgba(0, 0, 0, 0.4); 
 }
