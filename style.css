@@ -28,8 +28,8 @@ h1 {
 }
 
 .button-group {
-    
-    justify-content: center;
-
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
 
