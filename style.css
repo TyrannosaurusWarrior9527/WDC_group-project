@@ -34,3 +34,8 @@ h1 {
     
 }
 
+h2 {
+    position: fixed;
+    top: 200px;
+    left: 20px;
+}
