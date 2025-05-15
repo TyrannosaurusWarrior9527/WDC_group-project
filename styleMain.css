@@ -57,7 +57,7 @@ p {
 
 .scroll-container {
     position: absolute;
-    top: 100px;
+    top: 600px;
     right: 100px;
     display: flex;    
     gap: 10px;
