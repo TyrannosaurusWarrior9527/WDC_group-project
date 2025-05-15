@@ -35,9 +35,10 @@ h1 {
 }
 
 h2 {
-    font-family: 'Roboto';
+    font-family: 'Arial';
     color:white;
     position: fixed;
     top: 200px;
     left: 20px;
+    text-align: center;
 }
