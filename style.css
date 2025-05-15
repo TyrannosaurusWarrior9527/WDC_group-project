@@ -40,5 +40,5 @@ h2 {
     position: fixed;
     top: 200px;
     left: 20px;
-    text-align: center;
+    justify-content: center;
 }
