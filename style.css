@@ -37,8 +37,8 @@ h1 {
 h2 {
     font-family: 'Arial';
     color:white;
-    position: fixed;
+    position: absolute;
     top: 200px;
-    left: 20px;
-    justify-content: center;
+    left: 50px;
+   
 }
