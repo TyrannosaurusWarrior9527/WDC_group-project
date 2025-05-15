@@ -1,3 +1,5 @@
 body {
-    background-image: url('assets');
+    background-image: url('assets/mainpageBG.png');
+    background-size: cover;
+    background-position: center;
 }
