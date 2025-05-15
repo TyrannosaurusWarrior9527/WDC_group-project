@@ -9,6 +9,9 @@ function handleLogin() {
     })
     .then(res => res.json())
     .then(data => {
+      if (username === ''|| password === ''){
+        alert('Username and password can not be empty!')
+      }  
       if (data.success) {
         window.location.href = 'mainpage.html';  
       } else {
