@@ -1,7 +1,7 @@
 // routes/auth.js
 const express = require('express');
 const bcrypt  = require('bcryptjs');
-const pool    = require('../config/db');
+const pool    = require('../connect/POOL');
 const router  = express.Router();
 
 // register
