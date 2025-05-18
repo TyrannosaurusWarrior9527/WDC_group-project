@@ -11,6 +11,18 @@ body {
     justify-content: center;
     align-items: top;
 }
+
+.logout-link {
+    position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
 .button-group {
     position: absolute;
     top: 20px;
