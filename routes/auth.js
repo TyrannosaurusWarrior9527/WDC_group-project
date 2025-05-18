@@ -8,7 +8,7 @@ const router  = express.Router();
 router.post('/signup', async (req, res) => {
   const { username, email, password } = req.body;
   if (!username || !email || !password) {
-    return res.status(400).json({ message: '请提供用户名、邮箱和密码' });
+    return res.status(400).json({ message: 'Please provide username, email, and password' });
   }
   try {
     const hash = await bcrypt.hash(password, 10);
@@ -16,10 +16,10 @@ router.post('/signup', async (req, res) => {
       'INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)',
       [username, email, hash]
     );
-    res.status(201).json({ message: '注册成功' });
+    res.status(201).json({ message: 'registered successfully' });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ message: '注册失败，用户名或邮箱可能已被使用' });
+    res.status(500).json({ message: 'Registration failed, username or email may have been used' });
   }
 });
 
