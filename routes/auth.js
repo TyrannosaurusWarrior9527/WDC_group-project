@@ -42,11 +42,11 @@ router.post('/login', async (req, res) => {
     if (!match) {
       return res.status(401).json({ message: 'Password error' });
     }
-    // TODO: 如果需要 JWT，这里生成并返回 token
-    res.json({ message: '登录成功', userId: user.id });
+    // JWT
+    res.json({ message: 'registered successfully', userId: user.id });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ message: '登录出错' });
+    res.status(500).json({ message: 'registration error' });
   }
 });
 
