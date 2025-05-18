@@ -23,11 +23,11 @@ router.post('/signup', async (req, res) => {
   }
 });
 
-// 登录接口
+// login
 router.post('/login', async (req, res) => {
   const { username, password } = req.body;
   if (!username || !password) {
-    return res.status(400).json({ message: '请提供用户名和密码' });
+    return res.status(400).json({ message: 'Please provide username and password' });
   }
   try {
     const [rows] = await pool.query(
