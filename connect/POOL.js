@@ -1,16 +1,15 @@
-// config/db.js
+// connect/POOL.js
+require('dotenv').config();         // 最先加载 .env
 const mysql = require('mysql2/promise');
-require('dotenv').config();
 
-const cfg = mysql.createPool({
-  host:     process.env.DB_HOST,
-  port: process.env.DB_PORT,
-  user:     process.env.DB_USER,
-  password: process.env.DB_PASS,
-  database: process.env.DB_NAME,
+const pool = mysql.createPool({
+  host            : process.env.DB_HOST,                         // e.g. '127.0.0.1'
+  port            : parseInt(process.env.DB_PORT, 10) || 3306,  // e.g. 3307
+  user            : process.env.DB_USER,                        // e.g. 'root'
+  password        : process.env.DB_PASS,                        // e.g. '123456'
+  database        : process.env.DB_NAME,                        // e.g. 'wdc_db'
   waitForConnections: true,
-  connectionLimit: 10,
+  connectionLimit : 10,
 });
 
-const pool = mysql.createPool(cfg);
 module.exports = pool;
