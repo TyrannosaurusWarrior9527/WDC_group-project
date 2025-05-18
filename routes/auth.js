@@ -35,12 +35,12 @@ router.post('/login', async (req, res) => {
       [username]
     );
     if (rows.length === 0) {
-      return res.status(401).json({ message: '用户名不存在' });
+      return res.status(401).json({ message: 'user name does not exist' });
     }
     const user = rows[0];
     const match = await bcrypt.compare(password, user.password_hash);
     if (!match) {
-      return res.status(401).json({ message: '密码错误' });
+      return res.status(401).json({ message: 'Password error' });
     }
     // TODO: 如果需要 JWT，这里生成并返回 token
     res.json({ message: '登录成功', userId: user.id });
