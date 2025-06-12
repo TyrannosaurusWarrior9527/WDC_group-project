@@ -1,5 +1,5 @@
 // connect/POOL.js
-require('dotenv').config();         // 最先加载 .env
+require('dotenv').config();         // .env
 const mysql = require('mysql2/promise');
 
 const pool = mysql.createPool({
